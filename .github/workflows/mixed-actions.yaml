@@ -1,5 +1,8 @@
 name: Mixed actions
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
 jobs:
   github-action:
     runs-on: ubuntu-latest
